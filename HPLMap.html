@@ -1,0 +1,216 @@
+<html>
+<head>
+</head>
+  <title>Horn Point Lab</title>
+
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+.jumbotron{
+			margin-top: 5px;
+				background-image: url("https://www.washingtonian.com/wp-content/uploads/2016/07/chesapeake-bay-aerial-view_featured-994x661.jpg");/*sets the title page picture*/
+					background-size: cover;/*fits title pic to screen*/
+						color: black;/*text color for title section*/
+							
+
+		}
+  .canvas-container{margin: 0 auto;}
+		
+		
+.container2 {
+  position: relative; 
+  max-width: 1500px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+.container{
+    margin: 0 auto;
+}
+a{
+    color: grey;
+}
+nav {
+    margin: 0px 0;
+    background-color: blue;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+
+}
+nav ul li{
+    display: inline-block;
+    background-color: blue;
+}
+nav a{
+    display:block;
+    padding:0 10px; 
+    color:#111;
+    font-size:20px;
+    line-height: 50px;
+    text-decoration:none;
+}
+nav a:hover{
+    background: #000;
+    color: white;
+    text-decoration: none;
+}
+nav ul ul{
+    visibility: hidden;
+    position: absolute;
+    top: 50px;
+    opacity:0;
+  transform: translate(0,0);
+  transition:all 0.5s ease-in-out;
+}
+
+nav ul li:hover > ul{
+    visibility: visible;
+    opacity:1;
+
+}
+
+nav ul li:hover > ul{
+  top: 10px;
+  transform: translate(0,60px);
+  -webkit-transform: translate(0,60px); /** Chrome & Safari **/
+  -o-transform: translate(0,60px); /** Opera **/
+  -moz-transform: translate(0,60px); /** Firefox **/
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    width:300px;
+    float:none;
+    display:block;
+    position: relative;
+}
+/* Second, Third and more Tiers */
+nav ul ul ul li {
+    position: relative;
+    top:-60px; 
+    left:300px;
+}
+    </style>
+<body>
+<div class="container2">
+    <nav>
+      <ul>
+          <li><a href="HPL.html">Home</a></li>
+          <li><a href="HPLGallery.html">Gallery</a>
+                 
+          </li>
+          <li><a href="#">Maps</a>
+          <!-- First Tier Drop Down -->
+          <ul>
+           <li><a href="#">Two-Dimensional</a>
+            <!-- Second Tier Drop Down -->
+              <ul>
+		<li> <a href="masterMaps/2050Isabel4.5Max/openlayers.html">2050 Isabel at RCP45 Max</a></li>	 
+		<li>	<a href="masterMaps/2050Isabel4.5Mean/openlayers.html">2050 Isabel at RCP45 Mean</a></li>
+		<li> <a href="masterMaps/2050Isabel4.5Min/openlayers.html">2050 Isabel at RCP45 Min</a></li>
+		<li> <a href="masterMaps/2050Isabel8.5Max/openlayers.html">2050 Isabel at RCP85 Max</a></li>	 
+		<li><a href="masterMaps/2050Isabel8.5Mean/openlayers.html">2050 Isabel at RCP85 Mean</a></li>
+		<li><a href="masterMaps/2050Isabel8.5Min/openlayers.html">2050 Isabel at RCP85 Min</a></li>
+		<li> <a href="masterMaps/2100Isabel4.5Max/openlayers.html">2100 Isabel at RCP45 Max</a></li>	 
+		<li> <a href="masterMaps/2100Isabel4.5Mean/openlayers.html">2100 Isabel at RCP45 Mean</a></li>
+		<li> <a href="masterMaps/2100Isabel4.5Min/openlayers.html">2100 Isabel at RCP45 Min</a></li>
+		<li> <a href="masterMaps/2100Isabel8.5Max/openlayers.html">2100 Isabel at RCP85 Max</a></li>	 
+		<li> <a href="masterMaps/2100Isabel8.5Mean/openlayers.html">2100 Isabel at RCP85 Mean</a></li>
+		<li><a href="masterMaps/2100Isabel8.5Min/openlayers.html">2100 ISabel at RCP85 Min</a></li>
+                  
+              </ul>
+              </li>
+              <!--Starts another tier dropdown-->
+              <li><a href="#">Three-Dimensional</a>
+            <!-- Second Tier Drop Down -->
+              <ul>
+                  <li><a href="#">Inner Harbour</a>
+                   <ul>
+             		<li><a href="masterMapsEarth/innerHarbour2050/innerHarbour2050_max45.kmz">2050 Isabel at RCP45 Max</a></li>
+		<li> <a href="masterMapsEarth/innerHarbour2050/innerHarbour2050_mean45.kmz">2050 Isabel at RCP45 Mean</a></li>
+		<li> <a href="masterMapsEarth/innerHarbour2050/innerHarbour2050_min45.kmz">2050 Isabel at RCP45 Min</a></li>
+		<li><a href="masterMapsEarth/innerHarbour2050/innerHarbour2050_max85.kmz">2050 Isabel at RCP85 Max</a></li>
+		<li> <a href="masterMapsEarth/innerHarbour2050/innerHarbour2050_mean85.kmz">2050 Isabel at RCP85 Mean</a></li>
+		<li> <a href="masterMapsEarth/innerHarbour2050/innerHarbour2050_min85.kmz">2050 Isabel at RCP85 Min</a></li>
+		<li><a href="masterMapsEarth/innerHarbour2100/innerHarbour2100_max45.kmz">2100 Isabel at RCP45 Max</a></li>
+		<li> <a href="masterMapsEarth/innerHarbour2100/innerHarbour2100_mean45.kmz">2100 Isabel at RCP45 Mean</a></li>
+		<li> <a href="masterMapsEarth/innerHarbour2100/innerHarbour2100_min45.kmz">2100 Isabel at RCP45 Min</a></li>
+		<li><a href="masterMapsEarth/innerHarbour2100/innerHarbour2100_max85.kmz">2100 Isabel at RCP85 Max</a></li>
+		<li> <a href="masterMapsEarth/innerHarbour2100/innerHarbour2100_mean85.kmz">2100 Isabel at RCP85 Mean</a></li>
+		<li> <a href="masterMapsEarth/innerHarbour2100/innerHarbour2100_min85.kmz">2100 Isabel at RCP85 Min</a></li>
+  
+                  
+              </ul></li>
+                  <li><a href="#">Middle Branch 1</a>
+                   <ul>
+        <li><a href="masterMapsEarth/middleBranch1/middleBranch1_2050max45">2050 Max at RCP45</a></li>
+        <li><a href="masterMapsEarth/middleBranch1/middleBranch1_2050mean45">2050 Mean at RCP45</a></li>
+        <li><a href="masterMapsEarth/middleBranch1/middleBranch1_2050min45">2050 Min at RCP45</a></li>
+        <li><a href="masterMapsEarth/middleBranch1/middleBranch1_2050max85">2050 Max at RCP85</a></li>
+        <li><a href="masterMapsEarth/middleBranch1/middleBranch1_2050mean85">2050 Mean at RCP85</a></li>
+        <li><a href="masterMapsEarth/middleBranch1/middleBranch1_2050min85">2050 Minat RCP85</a></li>
+        <li><a href="masterMapsEarth/middleBranch1/middleBranch1_2100max45">2100 Max at RCP45</a></li>
+        <li><a href="masterMapsEarth/middleBranch1/middleBranch1_2100mean45">2100 Mean at RCP45</a></li>
+        <li><a href="masterMapsEarth/middleBranch1/middleBranch1_2100min45">2100 Min at RCP45</a></li>
+        <li><a href="masterMapsEarth/middleBranch1/middleBranch1_2100max85">2100 Max at RCP85</a></li>
+        <li><a href="masterMapsEarth/middleBranch1/middleBranch1_2100mean85">2100 Mean at RCP85</a></li>
+        <li><a href="masterMapsEarth/middleBranch1/middleBranch1_2100min85">2100 Min at RCP85</a></li>
+                  
+              </ul></li>
+                 
+              </ul>
+              </li>
+          </ul>
+          </li>
+          <li><a href="http://www.hpl.umces.edu/faculty/li/newweb/">Lab</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div>
+	<!--Section that holds the jumbotron itself and where you can change the text-->
+<section class="text-center bg-light">
+	
+    
+	<section class="jumbotron text-center bg-primary"><!--centers the text and sets the background color when no picture appears-->
+  
+	<!--titles for the jumbotron in the bold text-->
+      <h1 title="Horn Point Laboratory"> HORN POINT LABORATORIES</h1>
+      <img src="umces_logo.png" alt="HPL Logo"style="width: 600px; height: 150px;"><!--formats the image-->
+      
+    </section>
+<!--*******************************************************************************-->
+    <section class="text bg-light">
+      <div id="StartMapping" class="tabcontent">
+	      &emsp;&emsp;The Horn Point Laboratory, located on more than 800 acres on the banks of the Choptank River on Maryland's Eastern Shore, has advanced society's understanding of the world's estuarine and ocean ecosystems. Horn Point scientists are widely respected for their interdisciplinary programs in oceanography, water quality, restoration of seagrasses, marshes and shellfish and for expertise in ecosystem modeling. With ongoing research programs spanning from the estuarine waters of the Chesapeake Bay to the open waters of the world's oceans, Horn Point is a national leader in applying environmental research and discovery to solve society's most pressing environmental problems. <br><br>
+      </div>
+
+                 
+      <div id="detail" class="tabcontent">
+	      &emsp;&emsp; This page contains interactive content for the maps of the chesapeake bay area located in the Maryland/Delaware/Virignia area of the United States. To access the map and the gallery, you may use the navigation bar at the top of this page to choose where you wish to go. The Home button will redirect you to the page that you are currently on now. The Gallery button will redirect you to a page containing useful images to the project, and the map button will display a dropdown menu to choose which maps you wish to view. Each button will redirect you to a different map displaying the data from the scenario that you have selected.<br><br>
+	    
+      </div>
+               </p>
+      
+	   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjPrD-PxOSRX3SUvx5Nh3jzYSkQhyC671UKkWw4hbu1uXVKmLZ" alt="HPL Logo"style="width: 1110px; height: 300px;"class="rounded mx-auto d-block"><!--image using a link from google pics(WORKS)-->
+     
+    </div>
+    <br>
+      
+    </section>
+</div>
+</body>
+</html>

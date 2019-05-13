@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!--Created By: Sam Barnes-->
+<!--June, 2018-->
+<html lang="en">
+<head>
+  <title>Horn Point Lab</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--*******************************************************************************-->
+<!--title that shows up in the tab bar-->    
+    <title>Gallery</title>
+</head>
+<body style="padding:0px; margin:0px; background-color:#fff;font-family:arial,helvetica,sans-serif,verdana,'Open Sans'">
+<!--*******************************************************************************-->
+    <!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Maker -->
+    <!-- Source: https://www.jssor.com -->
+    <!--Javascript to handle the gallery/carousel formatting and operations DO NOT CHANGE-->
+    <script src="js/jssor.slider-27.1.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:800,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Orientation: 2
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+<!--*******************************************************************************-->
+<!--CSS for styling the page to make it look neat and organized-->    
+    <style>
+    body {
+      background-image: url("bg.jpg");
+      color: black;
+}
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+.container {
+  position: relative; 
+  max-width: 1500px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+.dropdown-submenu {
+    position: relative;
+}
+footer {
+background-color: black;
+color: gray;
+}
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+        /*jssor slider bullet skin 111 css*/
+        .jssorb111 .i {position:absolute;color:#fff;font-family:"Helvetica neue",Helvetica,Arial,sans-serif;text-align:center;cursor:pointer;z-index:0;}
+        .jssorb111 .i .n {display:none;}
+        .jssorb111 .i .b {fill:#fff;stroke:#000;stroke-width:500;stroke-miterlimit:10;stroke-opacity:.5;}
+        .jssorb111 .i:hover .b {fill:#fea900;stroke:#fea900;stroke-width:6000;stroke-opacity:1;}
+        .jssorb111 .iav .b {fill:#000;stroke-width:6000;stroke-opacity:1;}
+        .jssorb111 .i.idn {opacity:.3;}
+        .jssorb111 .iav .n, .jssorb111 .i:hover .n {display:block;}
+
+        /*jssor slider thumbnail skin 121 css*/
+        .jssort121 .p {position:absolute;top:0;left:0;border-bottom:1px solid rgba(255,255,255,.2);box-sizing:border-box;color:#fff;background:rgba(0,0,0,.1);opacity:.7;}
+        .jssort121 .p .t {position:absolute;padding:10px;box-sizing:border-box;top:0;left:0;width:100%;height:100%;line-height:24px;overflow:hidden;}
+        .jssort121 .p .i {margin-right:10px;position:relative;top:0;left:0;width:96px;height:48px;border:none;float:left;}
+        .jssort121 .pav, .jssort121 .p:hover {color:#000;background:rgba(255,255,255,.7);}
+        .jssort121 .p:hover {opacity:.75;}
+        .jssort121 .pav, .jssort121 .p:hover.pdn {opacity:1;}
+        .jssort121 .ti {position:relative;font-size:14px;font-weight:bold;}
+        .jssort121 .d {position:relative;font-size:12px;}
+        /*.jssort121 .d:before {content:'\a';white-space:pre;}*/
+    </style>
+
+<!--*******************************************************************************-->
+
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+    <li><a href="map.html">Maps</a></li>
+      <li class="active"><a href="HPLGallery.html">Gallery</a></li>
+      <li><a href="http://www.hpl.umces.edu/faculty/li/newweb/">Lab</a></li>
+      <li><a href="contacts.html">Contact Us</a></li>
+      
+
+  </div>
+</nav> 
+  
+<!--*******************************************************************************-->
+<!--Section that takes in the images and creates their text for them-->
+<section class=" text bg-light">
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1000px;height:430px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+           
+                    <div data-p="170.00">
+                <img data-u="image" src="img/2003.jpg" />
+                <div data-u="thumb">
+                    <img data-u="thumb" class="i" src="img/2003.jpg" />
+                    <span class="ti">2003 Isabel</span><br />
+                    <span class="d">Hurricane Isabel in 2003.</span>
+                </div>
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="img/2100.jpg" />
+                <div data-u="thumb">
+                    <img data-u="thumb" class="i" src="img/2100.jpg" />
+                    <span class="ti">Future</span><br />
+                    <span class="d">Storm similar in 2100</span>
+                </div>
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="img/curtisbay.jpg" />
+                <div data-u="thumb">
+                    <img data-u="thumb" class="i" src="img/curtisbay.jpg" />
+                    <span class="ti">Curtis Bay</span><br />
+                    <span class="d">Curtis Bay Normal</span>
+                </div>
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="img/curtisbayW.jpg" />
+                <div data-u="thumb">
+                    <img data-u="thumb" class="i" src="img/curtisbayW.jpg" />
+                    <span class="ti">Curtis Bay after</span><br />
+                    <span class="d">Possible flooding in 2100</span>
+                </div>
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="img/innerharbour.jpg" />
+                <div data-u="thumb">
+                    <img data-u="thumb" class="i" src="img/innerharbour.jpg" />
+                    <span class="ti">Baltimore Inner Harbour</span><br />
+                    <span class="d">Inner Harbour area</span>
+                </div>
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="img/innerharbourW.jpg" />
+                <div data-u="thumb">
+                    <img data-u="thumb" class="i" src="img/innerharbourW.jpg" />
+                    <span class="ti">Inner Habrour, Baltimore</span><br />
+                    <span class="d">Possible flooding in 2100</span>
+                </div>
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="img/winans.jpg" />
+                <div data-u="thumb">
+                    <img data-u="thumb" class="i" src="img/winans.jpg" />
+                    <span class="ti">Winans Cove area</span><br />
+                    <span class="d">Winans Cove in Baltimore</span>
+                </div>
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="img/winansW.jpg" />
+                <div data-u="thumb">
+                    <img data-u="thumb" class="i" src="img/winansW.jpg" />
+                    <span class="ti">Winans Cove, Baltimore</span><br />
+                    <span class="d">Winans Cove in Baltimore, MD</span>
+                </div>
+            </div>
+            <div data-p="170.00">
+                <img data-u="image" src="img/middlebranch.jpg" />
+                <div data-u="thumb">
+                    <img data-u="thumb" class="i" src="img/middlebranch.jpg" />
+                    <span class="ti">Middle Branch, Baltimore</span><br />
+                    <span class="d">Middle Branch in Baltimore, MD</span>
+                </div>
+            </div>
+             <div data-p="170.00">
+                <img data-u="image" src="img/middlebranchW.jpg" />
+                <div data-u="thumb">
+                    <img data-u="thumb" class="i" src="img/middlebranchW.jpg" />
+                    <span class="ti">Middle Branch in 2100</span><br />
+                    <span class="d">Middle Branch possible flooding</span>
+                </div>
+            </div>
+        </div>
+<!--*******************************************************************************-->
+<!--creates the navigator to move between slides in the carousel-->	
+        <!-- Thumbnail Navigator -->
+        <div data-u="thumbnavigator" class="jssort121" style="position:absolute;left:0px;top:0px;width:268px;height:380px;overflow:hidden;cursor:default;" data-autocenter="2" data-scale-left="0.75">
+            <div data-u="slides">
+                <div data-u="prototype" class="p" style="width:268px;height:68px;">
+                    <div data-u="thumbnailtemplate" class="t"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb111" style="position:absolute;bottom:12px;right:12px;" data-scale="0.5">
+            <div data-u="prototype" class="i" style="width:24px;height:24px;font-size:12px;line-height:24px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;">
+                    <circle class="b" cx="8000" cy="8000" r="3000"></circle>
+                </svg>
+                <div data-u="numbertemplate" class="n"></div>
+            </div>
+        </div>
+    </div>
+<!--*******************************************************************************-->
+<!--Calls the javascript necessary for the page-->    
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    <script>
+    $(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+    <!-- #endregion Jssor Slider End -->
+    <div class="container">
+<!--*******************************************************************************-->
+<!--creates a row for under the carousel-->	    
+         
+
+<div class="row">
+    <div class="col-xs-10 col-sm-6">
+    <h1>Storm Surge</h1>
+    Climate change, sea-level rise, and associated storms are putting Maryland’s people, property, natural resources, and public investments at risk. This project is directed at assessing the impacts of long-term sea level rise and episodic storm surges on the low-lying lands of Maryland’s Eastern Shore at 2050 and 2100. The images above show the effects of strom surge in 2003 from Hurricane Isabel, 2050 and 2100 with storms similar to Isabel.<br><br>
+      <h1>Nuisance Flooding</h1>
+	    To the right are pictures of nuisance flooding in Annapolis, Maryland from March 7, 2018 which comes from rising tides. Photos courtesy of: Capital Gazette. Below is an animation from the nuisance flooding that occurred on March 7, 2018 in downtown Annapolis. The timeline shows from when the flooding occurred all the way until the streets were npo longer flooded.<br><br> 
+
+    	<iframe width="100%" height="300px" src="https://www.youtube.com/embed/YRI8-7XFNdg?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+</div>
+    <div class="col-xs-10 col-sm-4">
+    	<!--<img src="img/heron.jpg" alt="HPL Logo"style="width: 250px; height: 550px;"class="rounded align-right mx-auto d-block"><!-- formats the image in this column-->
+<img src="img/nuisance1.jpg" alt="HPL Logo"style="width: 450px; height: 350px;"><!--image using a link from google pics(WORKS)-->
+
+
+<img src="img/nuisance2.jpg" alt="HPL Logo"style="width: 450px; height: 350px;"><!--image using a link from google pics(WORKS)-->
+    	
+</div>
+</div>
+
+
+</section>
+</body>
+
+<!-- Footer -->
+<footer class="page-footer font-small cyan darken-3">
+
+
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">	  UMCES, Horn Point Laboratory ~ P.O. Box 775 ~ Cambridge, MD 21613<br>Coastal Science ~ 1201A
+<br>© 2018 Copyright:
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+</html>

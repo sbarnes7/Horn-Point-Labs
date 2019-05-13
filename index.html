@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--Created By: Sam Barnes-->
+<!--June, 2018-->
+<html lang="en">
+<head>
+  <title>Horn Point Lab</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--*******************************************************************************-->
+<!--CSS functions for formatting the page-->
+<style type="text/css">
+footer {
+background-color: black;
+color: gray;
+}
+a{
+color: blue;
+font-weight: bold;
+}
+body {
+   background-image: url("bg.jpg");
+   color: black;
+}
+		.jumbotron{
+			margin-top: 5px;
+				background-image: url("back");/*sets the title page picture*/
+					background-size: cover;/*fits title pic to screen*/
+						font-family: "Constantia", Constantia, serif;
+                        opacity: 0.82;
+							
+
+		}
+  .canvas-container{margin: 0 auto;}
+		
+		
+.container {
+  position: relative; 
+  max-width: 1500px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+</style>
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+<!--*******************************************************************************-->
+
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+    <li><a href="map.html">Maps</a></li>
+      <li><a href="HPLGallery.html">Gallery</a></li>
+      <li><a href="http://www.hpl.umces.edu/faculty/li/newweb/">Lab</a></li>
+      <li><a href="contacts.html">Contact Us</a></li>
+      
+
+  </div>
+</nav> 
+<div class="container">
+	<!--Section that holds the jumbotron itself and where you can change the text-->
+<section class="text bg-light">
+	
+    
+	<section class="jumbotron text-center bg-primary"><!--centers the text and sets the background color when no picture appears-->
+  
+	<!--titles for the jumbotron in the bold text-->
+      <h1 title="Horn Point Laboratory"> COASTAL INUNDATION PREDICTIONS FOR MARYLAND</h1>
+      
+    </section>
+<!--*******************************************************************************-->
+    <section class="text bg-light">
+    <div class="row">
+    <div class="col-sm-6">
+    Climate change, sea-level rise, and associated storms are putting Maryland’s people, property, natural resources, and public investments at risk. In a project funded by <a href="http://www.mdsg.umd.edu/">Maryland Sea Grant</a>, a group of researchers from the University of Maryland Center for Environmental Science and Salisbury University have assessed the impacts of long-term sea level rise and episodic storm surge on coastal inundation over Maryland. Their research focuses on three high-risk areas: Eastern Shore of Maryland, Baltimore and Annapolis. Using climate downscaling projections from the latest climate models (IPCC CMIP5) to drive high-resolution regional atmosphere-ocean models, the researchers have investigated how sea level rise and a Category 2 storm like Hurricane Isabel (2003) generate flooding at the coastal sites in Maryland at 2050 and 2100. The numerical model outputs are combined with GIS information and LIDAR data to show the area extent, depth, duration of coastal inundation at the street level. This website displays 2D and 3D static and animated digital products depicting inundation risks in Baltimore, Annapolis and Maryland’s Eastern Shore in Google Maps and Google Earth.<br><br>
+       This page contains interactive content for the maps of the Chesapeake bay area located in the Maryland/Delaware/Virginia area of the United States. To access the map and the gallery, you may use the navigation bar at the top of this page to choose where you wish to go. The Home button will redirect you to the page that you are currently on now. The Gallery button will redirect you to a page containing useful images to the project, and the map button will redirect you to a page where you may choose between a two or three dimensional map view. From there you may choose your year and scenario and view whichever map you please.
+                 
+   <br><br>
+	
+	      </div>
+	      <div class="col-sm-6">
+	  <img src="img/hurricane.jpg" alt="HPL Logo"style="width: 100%; height: 100%;"class="rounded mx-auto d-block"></img><!--image using a link from google pics(WORKS)-->
+
+	    <div>
+
+     
+</div>
+      </div>
+             <br> </p>
+
+      
+	  <img src="img/HPLbayy.jpg" alt="HPL Logo"style="width: 100%; height: 300px;"class="rounded mx-auto d-block"><!--image using a link from google pics(WORKS)--><br><br>
+     
+    </div>
+    <br>
+    </section>
+</div>
+</body>
+<!-- Footer -->
+<footer class="page-footer font-small cyan darken-3">
+
+
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">	  UMCES, Horn Point Laboratory ~ P.O. Box 775 ~ Cambridge, MD 21613<br>Coastal Science ~ 1201A
+<br>© 2018 Copyright:
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+</html>
+
+
+
+
